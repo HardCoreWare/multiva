@@ -1,0 +1,27 @@
+{
+    "database":{
+
+        "database_type":"mysql",
+        "database_name":"BALANZA",
+        "server":"localhost",
+        "username":"root",
+        "password":""
+        
+    },
+    "app":{
+
+        "url":"http://localhost/multiva/public"
+
+    },
+    "google":{
+
+        "bigQuery":{
+
+            "projectId":"informe-211921",
+            "dataset":"BALANZA"
+
+        }
+
+    }
+
+}

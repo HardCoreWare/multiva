@@ -1,0 +1,102 @@
+class StoreForm{
+
+    //
+    readData(data){
+
+        this.data=data;
+
+    }
+
+    //
+    writeForm(divId){
+
+        const month = parseInt(this.data.Mes);
+        let selectMonth='';
+
+        for(let i=1; i<=month; i++){
+
+            let monthString;
+
+            switch (i) {
+                case 1:
+                monthString="ENERO";
+                    break;
+                case 2:
+                monthString="FEBRERO";
+                    break;
+
+                case 3:
+                monthString="MARZO";
+                    break;
+
+                case 4:
+                monthString="ABRIL";
+                    break;
+
+                case 5:
+                monthString="MAYO";
+                    break;
+
+                case 6:
+                monthString="JUNIO";
+                    break;
+
+                case 7:
+                monthString="JULIO";
+                    break;
+
+                case 8:
+                monthString="AGOSTO";
+                    break;
+
+                case 9:
+                monthString="SEPTIEMBRE";
+                    break;
+
+                case 10:
+                monthString="OCTUBRE";
+                    break;
+
+                case 11:
+                monthString="NOVIEMBRE";
+                    break;
+
+                case 12:
+                monthString="DICIEMBRE";
+                    break;
+            
+                default:
+                monthString="ENERO";
+                    break;
+            }
+            
+            selectMonth += '<option value="';
+            selectMonth += i.toString();
+            selectMonth += '">';
+            selectMonth += monthString;
+            selectMonth += '</option>';
+
+        }
+
+        
+        $(divId).html(selectMonth);
+
+        $(divId).val(month.toString());
+
+    }
+
+    readForm(){
+
+        const params={
+
+            year : $("#selectYear").val(),
+            month : $("#selectMonth").val(),
+            type : $("#selectType").val()
+
+        };
+        
+        return params;
+
+    }
+
+}

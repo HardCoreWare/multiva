@@ -1,0 +1,60 @@
+.table-breakdown{
+
+    color: whitesmoke;
+
+    cursor: pointer;
+    
+}
+
+.table-cell{
+
+    color: whitesmoke;
+
+    cursor: pointer;
+    
+}
+
+td{
+
+    color: whitesmoke;
+
+}
+
+.fa-check-square{
+
+    color: rgb(39, 200, 39);
+
+    cursor: pointer;
+
+
+}
+
+.fa-times-rectangle{
+
+    color:red;
+
+    cursor: pointer;
+
+}
+
+.fa-trash{
+
+    color:red;
+
+    cursor: pointer;
+
+}
+
+.breakdown-action, .chart-action{
+
+    color:rgb(220,220,255);
+    cursor: pointer;
+
+}
+
+.breakdown-close, .chart-close{
+
+    color:whitesmoke;
+    cursor: pointer;
+
+}
