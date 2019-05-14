@@ -6,10 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Config\\Config' => $baseDir . '/app/src/Config/Config.php',
     'App\\Controllers\\Controller' => $baseDir . '/app/src/Controllers/Controller.php',
+    'App\\Controllers\\ProxyController' => $baseDir . '/app/src/Controllers/ProxyController.php',
     'App\\Controllers\\ViewController' => $baseDir . '/app/src/Controllers/ViewController.php',
-    'App\\Interfaces\\ConnectionInterface' => $baseDir . '/app/src/Interfaces/ConnectionInterface.php',
     'App\\Modules\\Connection' => $baseDir . '/app/src/Modules/Connection.php',
+    'App\\Modules\\Finder' => $baseDir . '/app/src/Modules/Finder.php',
+    'App\\Modules\\Proxy' => $baseDir . '/app/src/Modules/Proxy.php',
     'App\\Modules\\User' => $baseDir . '/app/src/Modules/User.php',
     'ElephantIO\\AbstractPayload' => $vendorDir . '/wisembly/elephant.io/src/AbstractPayload.php',
     'ElephantIO\\AbstractPayloadTest' => $vendorDir . '/wisembly/elephant.io/test/AbstractPayloadTest.php',

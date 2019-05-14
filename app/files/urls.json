@@ -1,0 +1,26 @@
+{
+
+    "coincap":{
+
+        "settings":
+            
+            {
+                "base_uri" : "https://api.coincap.io"
+            }
+
+
+    },
+    
+    "contables" : {
+
+        "settings":
+            
+            {
+
+                "base_uri" : "http://35.231.115.38/"
+                
+            }
+
+    }
+
+}

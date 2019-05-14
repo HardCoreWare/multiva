@@ -194,10 +194,13 @@ class ComposerStaticInitd7fe1def8b71f1140bd2ead8f66fe254
     );
 
     public static $classMap = array (
+        'App\\Config\\Config' => __DIR__ . '/../..' . '/app/src/Config/Config.php',
         'App\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/src/Controllers/Controller.php',
+        'App\\Controllers\\ProxyController' => __DIR__ . '/../..' . '/app/src/Controllers/ProxyController.php',
         'App\\Controllers\\ViewController' => __DIR__ . '/../..' . '/app/src/Controllers/ViewController.php',
-        'App\\Interfaces\\ConnectionInterface' => __DIR__ . '/../..' . '/app/src/Interfaces/ConnectionInterface.php',
         'App\\Modules\\Connection' => __DIR__ . '/../..' . '/app/src/Modules/Connection.php',
+        'App\\Modules\\Finder' => __DIR__ . '/../..' . '/app/src/Modules/Finder.php',
+        'App\\Modules\\Proxy' => __DIR__ . '/../..' . '/app/src/Modules/Proxy.php',
         'App\\Modules\\User' => __DIR__ . '/../..' . '/app/src/Modules/User.php',
         'ElephantIO\\AbstractPayload' => __DIR__ . '/..' . '/wisembly/elephant.io/src/AbstractPayload.php',
         'ElephantIO\\AbstractPayloadTest' => __DIR__ . '/..' . '/wisembly/elephant.io/test/AbstractPayloadTest.php',
